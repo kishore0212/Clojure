@@ -1,8 +1,17 @@
-(ns clojure.examples.hello
+(ns clojure
   (:gen-class))
-(defn Example []
+(defn recur []
   (loop [i 0]
     (when (< i 5)
       (println "*")
       (recur (inc i)))))
-(Example)
+(recur)
+
+(ns clojure
+  (:gen-class))
+(defn recur []
+  (loop [i 0]
+    (when (< i 5)
+      (println i)
+      (recur (dec i)))))
+(recur)

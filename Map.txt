@@ -1,24 +1,24 @@
 Hash map:
-(ns clojure.examples.example
+(ns clojure
    (:gen-class))
-(defn example []
+(defn keys []
    (def demokeys (hash-map "z" "1" "b" "2" "a" "3"))
    (println demokeys))
-(example)
+(keys)
 
 sorted map:
-(ns clojure.examples.example
+(ns clojure
   (:gen-class))
-(defn example []
+(defn sortkeys []
   (def demokeys (sorted-map "z" "1" "b" "2" "a" "3"))
   (println demokeys))
-(example)
+(sortkeys)
 
 Merge maps
-(ns clojure.examples.example
+(ns clojure
   (:gen-class))
-(defn example []
+(defn mkeys []
   (def demokeys (hash-map "z" 1 "b" 2 "s" 3))
   (def demokeys1 (sorted-map "a" 2 "h" 5 "i" 7))
   (println (merge-with + demokeys demokeys1)))
-(example)
+(mkeys)

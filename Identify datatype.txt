@@ -1,10 +1,8 @@
-(ns clojure.examples.hello
+(ns clojure
    (:gen-class))
-
-;; This program displays Hello World
-(defn Example []
+(defn kishore []
    (def x 5)
    (def y 5.25)
    (println (type x))
    (println (type y)))
-(Example)
+(kishore)

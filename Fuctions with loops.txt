@@ -1,4 +1,4 @@
-(ns clojure.examples.hello
+(ns clojure
   (:gen-class))
 (defn add-2
   "add this numbers"

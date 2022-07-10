@@ -1,4 +1,4 @@
-(ns clojure.examples.hello
+(ns clojure
   (:gen-class))
 (defn kishore []
   (def x 1)
