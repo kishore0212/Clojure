@@ -1,5 +1,4 @@
-(ns clojure
-  (:gen-class))
+
 (defn recur []
   (loop [i 0]
     (when (< i 5)
@@ -7,8 +6,6 @@
       (recur (inc i)))))
 (recur)
 
-(ns clojure
-  (:gen-class))
 (defn recur []
   (loop [i 0]
     (when (< i 5)

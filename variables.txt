@@ -1,5 +1,4 @@
-(ns clojure
-  (:gen-class))
+
 (defn kishore []
   (def x 1)
   (def y 1.25)

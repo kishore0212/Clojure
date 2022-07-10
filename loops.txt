@@ -1,11 +1,16 @@
-(loop [iteration 0]
-  (println (str "Iteration " iteration))
-  (if (> iteration 5)
-    (println "End")
-    (recur (inc iteration))))
+(defn kishore
+   ([]
+    (kishore 0))
+   ([iteration]
+    (println iteration)
+    (if (>= iteration 3)
+       (println "End")
+       (kishore (inc iteration)))))
+(kishore)
 
-(ns clojure
-  (:gen-class))
+//normal for loop with a if condition
+
+
 (defn kishore []
   (loop [x 10]
     (when (> x 1)
@@ -13,14 +18,17 @@
       (recur (- x 2)))))
 (kishore)
 
-Dotimes
+//Dotimes
 
-(ns clojure
-  (:gen-class))
 (defn kishore []
   (dotimes [n 5]
     (println "hai")))
 (kishore)
+
+//Do seq
+(doseq [name [:kishore :pavan]
+      number (range 3)]
+  (println [name number]))
 
 
 

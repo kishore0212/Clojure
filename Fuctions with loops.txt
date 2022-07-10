@@ -1,6 +1,5 @@
-(ns clojure
-  (:gen-class))
-(defn add-2
+
+(defn add
   "add this numbers"
   [a b]
   (let [c (+ a b)]
@@ -12,4 +11,3 @@
     1))
 (factorial 8)
 (dec 8)
-(inc 8)
