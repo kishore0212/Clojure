@@ -1,0 +1,10 @@
+(ns clojure.examples.hello
+  (:gen-class))
+(defn kishore []
+  (def x 1)
+  (def y 1.25)
+  (def str1 "Hai")
+  (println x)
+  (println y)
+  (println str1))
+(kishore)
