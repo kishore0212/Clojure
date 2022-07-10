@@ -16,3 +16,21 @@ If statements
     "Oh my gosh! What a big number!"
     "That number's OK, I guess"))
 (number-comment 5)
+
+//Nested if 
+
+(defn nested [] (
+                   if ( and (= "kishore" "kishor") (= 3 3))
+                   (println "Values are equal")
+                   (println "Values are not equal")))
+(nested)
+
+//case statement
+
+(defn case []
+  (def x )
+  (case x 5
+          (println "x is 5")
+          10 (println "x is 10")
+          (println "x is neither 5 nor 10")))
+(case)
