@@ -1,15 +1,10 @@
 (ns clojure.examples.hello
-  (:gen-class))
-(defn add-2
-  "add this numbers"
-  [a b]
-  (let [c (+ a b)]
-    c))
+   (:gen-class))
 
-(defn factorial [n]
-  (if (> n 1)
-    (* n (factorial (dec n)))
-    1))
-(factorial 8)
-(dec 8)
-(inc 8)
+;; This program displays Hello World
+(defn Example []
+   (def x 5)
+   (def y 5.25)
+   (println (type x))
+   (println (type y)))
+(Example)
