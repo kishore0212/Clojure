@@ -1,7 +1,0 @@
-
-(defn kishore []
-   (def x 5)
-   (def y 5.25)
-   (println (type x))
-   (println (type y)))
-(kishore)
